@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Khaled Fitness</title>
+
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+   -->
+
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+
+
+  <style>
+    .carousel-item img{
+      height: 600px !important;
+      margin: 0 auto;
+    
+    }
+    .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.carousel-inner {
+  text-align: center;
+}
+
+
+
+    .card-content i{
+      font-size: 2.5em;
+
+    }
+
+    #main_img{
+      width: 600px !important;
+      height: 740px !important;
+    }
+
+
+ 
+.hero-content {
+    position: absolute;
+    bottom: 13%; /* Adjust this value for desired vertical position */
+    left: 63%;
+    transform: translateX(-50%);
+    text-align: right;
+    
+}
+
+.hero-subtitle{
+  margin-left: auto; /* Automatically adjust margin to push content to the right */
+
+}
+.background-image {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/images/hero-bg.jpg'); 
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+@media (max-width: 768px) {
+
+   .background-image {
+
+      background-image: url('./assets/images/hero-bng-mobile-darkened3.png'); 
+      background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    margin-top: 80px;
+   }
+
+   #about_img{
+    display: none !important;
+   }
+   .carousel-item img{
+      height: 400px !important;
+      width: 300px !important;
+      margin: 0 auto;
+    
+    }
+
+    .hero-content {
+    position: absolute;
+    bottom: 20%; /* Adjust this value for desired vertical position */
+    left: 22%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 150px;
+    
+}
+.section-text{
+  font-size: 0.80em;
+  
+  text-align: right;
+}
+
+.hero-subtitle{
+  font-size: 0.75em;
+  width: 230px;
+}
+
+.about-content{
+   text-align: center !important;
+
+}
+.section-title{
+text-align: center;
+}
+.section-subtitle{
+  text-align: center !important;
+
+}
+
+.about-coach{
+justify-content: center;
+}
+
+
+}
+
+#about_img{
+  height: 720px;
+}
+.card-content{
+  text-align: right;
+  padding: 8px !important;
+}
+.card-title{
+  padding: 20px !important;
+
+}
+
+
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">Mahmoud-Khaled</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>الرئيسية</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>معلومات تهمك</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>نتائج المتابعين</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>خطط التدريب</a>
+          </li>
+
+          <li>
+            <a href="#contacts" class="navbar-link" data-nav-link>تواصل معنا</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#blog" class="btn btn-secondary">اشترك الان</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="main_section  " id="home" aria-label="hero" data-section>
+        <div class="background-image section hero bg-dark">
+           
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              
+              مرحبا بك في افضل موقع ل
+              <br>
+              <strong class="strong">كمال الاجسام</strong>
+            </p>
+
+            <!-- <h1 dir='rtl' lang='ar' class="h1 hero-title">حوّل جسدك، حوّل حياتك</h1> -->
+
+            <p dir='rtl' lang='ar' class="section-text">
+              سيتم تدريبك بواسطة كابتن محمود وهو مدرب دولي معتمد 
+              في مجال الفيتنس والتغذية
+            </p>
+
+            <a dir='rtl' lang='ar' href="#about" class="btn btn-secondary">اعرف المزيد</a>
+            <a dir='rtl' lang='ar' href="#blog" class="btn btn-primary">اشترك الان</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <!-- <img id="main_img" src="./assets/images/hero-banner.png"  height="753" alt="hero banner" class="w-100"> -->
+
+            <!-- <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">  -->
+
+
+      
+            </div>
+        </div>
+      </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img id="about_img" src="./assets/images/about-banner.jpg" width="660"  loading="lazy" alt="about banner"
+              class="w-100 ">
+
+
+          </div>
+
+          <div class="about-content">
+
+
+            <h2 class="h2 section-title">الشهادات والخبرات</h2>
+
+            <p dir='rtl' lang='ar' class="section-text">
+           
+   بقدم خدمه المتابعه الاونلاين ودي ليها مميزات كتير منها اني بختصر عليك الطريق والتجربه عشان توصل لشكل الجسم الي بتحلم بيه في اققل وقت ممكن معا الحفاظ علي صحتك وباققل سعر مقابل خدمه 👌
+            </p>
+
+            <p dir='rtl' lang='ar' class="section-text">
+  🔰1- نظام اكل 🔰حسب الاكل المفضل وبيكون متغير حسب استجابه كل جسم معا مراعاه الحاله الصحيه والنفسيه للمتدرب ❤️
+            </p>
+
+            <p dir='rtl' lang='ar' class="section-text">
+🔰2- نظام تدريب 🔰حسب مستوي المتدرب والمتاح بالنسباله اذا كان ف الجيم او البيت معا التركيز علي كل الجوانب
+( القوه العامه - التناسق - المرونه )           
+
+ </p>
+
+            <p dir='rtl' lang='ar' class="section-text">
+🔰3- مكملات 🔰 حسب الاحتياج اليومي وحسب الحالات المختلفه (البلوغ - الرضاعه- كبار السن - حالات نقص الفيتامينات والمعادن - امراض سوء التغذيه )       
+</p>
+
+  <p dir='rtl' lang='ar' class="section-text">
+🔰4- متابعه يوميه🔰 علي الواتساب معا تقرير يومي من العميل بالاكل علي مدار اليوم ومدي الالتزام بالخطه لمتابعة النتايج وسهوله التواصل
+</p>
+
+<p dir='rtl' lang='ar' class="section-text">
+
+              ⚫️ اولا الكورسات المعتمده والخبرات الحاصل عليها ⚫️ 
+</p>
+
+<p  class="section-text">
+
+
+  ‏1- Certified Personal Trainer 
+  <br>
+  ‏2- Specialist In Nutritionist 
+  <br>
+  ‏3- Specialist In Online Couching
+  <br>
+  ‏4- Specialist In Strength And  Conditioning 
+  <br>
+  ‏5- Specialist In Groub Fitness 
+  <br>
+  ‏6- Corrective Exercise Specialist
+  <br>
+  ‏7- Bodybuilding Specialist
+  <br>
+  ‏8- Powre Lifting Specialist
+  <br>
+</p>
+
+<p dir='rtl' lang='ar' class="section-text">
+  9- دارس التغذيه العلاجيه في كليه التربيه النوعيه جامعه عين شمس بتقدير جيد جدا وبحضر الماستر والدكتوراه بعدها باذن الله ❤️ 
+   واخيرا خبره ٨ سنين في التطبيقي العملي في التدريب والتغذيه علي نفسي والي حوليا قبل مابدا شغل في الفتره الاخيره معا عملاء ونحقق نتايج بفضل ربنا🔰
+</p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">Mahmoud Khaled</h3>
+
+                  <p class="coach-title">Our Coach</p>
+                </div>
+
+              </div>
+
+       
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <section class="section bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+
+        <div class="container">
+          <h2 style="color: whitesmoke;" class="h2 section-title text-center">نتائج المتابعين</h2>
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1600">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  src="./assets/images/transformations/7amed.jpg" class="d-block" alt="...">
+              </div>
+         
+            
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_232928.png" class="d-block" alt="...">
+              </div>
+
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230817_195841.png" class="d-block" alt="...">
+              </div>
+ 
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230817_195744.png" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230817_195555.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230808_232956.png" class="d-block" alt="...">
+              </div>
+
+      
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230808_232842.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_232928.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_214509.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_232102.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230817_195429.png" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_233012.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_232631.png" class="d-block" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img  src="./assets/images/transformations/20230805_232515.png" class="d-block" alt="...">
+              </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">خطط التدريب</p>
+
+          <h2 class="h2 section-title text-center">اختر الباقة المناسبة لك</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <h3  dir='rtl' lang='ar' class="h3">
+                    <a  dir='rtl' lang='ar' href="#contacts" class="card-title">💸الباقة الموفرة 💸 
+                    </a>
+                  </h3>
+
+    <p  dir='rtl' lang='ar' class="card-text">
+    
+- نظام غذائي ببدايل موفرة واقتصادية (شهري)✅️
+
+    </p>
+
+  <p  dir='rtl' lang='ar' class="card-text">
+  
+    - نظام تمرين مشروح بالفيديو ✅️
+                      </p>
+
+<p  dir='rtl' lang='ar' class="card-text">
+
+  - متابعه (اسبوعيه) ✅️ 
+
+            </p>
+
+  <p  dir='rtl' lang='ar' class="card-text">
+
+    - متابعه النتايج بشكل (شهري) ✅️
+      
+            </p>
+
+  <p  dir='rtl' lang='ar' class="card-text">
+
+    -دعم نفسي علاج الافكار والمشاعر ❌️ 
+      
+            </p>
+
+    <p  dir='rtl' lang='ar' class="card-text">
+
+
+   <strong>🔰  الشهر  :      350 جنيه</strong>   
+
+      <br>
+    <strong>🔰 3 شهور :    800 جنيه</strong>  
+      
+        
+              </p>        
+
+
+
+
+                  <a  dir='rtl' lang='ar' href="#contacts" class="btn-link has-before">تواصل للاشتراك</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3  dir='rtl' lang='ar' class="h3">
+                    <a  dir='rtl' lang='ar' href="#contacts" class="card-title">🥈 الباقة الفضية 🥈 
+                    </a>
+                  </h3>
+
+                  <p  dir='rtl' lang='ar' class="card-text">
+    
+                    - نظام غذائي ببدايل سهله وسريعه (كل اسبوعين)✅️                    
+                        </p>
+                    
+                      <p  dir='rtl' lang='ar' class="card-text">
+                      
+                        - نظام تمرين مشروح بالفيديو ✅️
+                      </p>
+                    
+                    <p  dir='rtl' lang='ar' class="card-text">
+                    
+                      - متابعه (اسبوعيه) ✅️ 
+                    
+                                </p>
+                    
+                      <p  dir='rtl' lang='ar' class="card-text">
+                    
+                        - متابعه النتايج بشكل (كل اسبوعين) ✅️
+                          
+                                </p>
+                    
+                      <p  dir='rtl' lang='ar' class="card-text">
+                    
+                        -دعم نفسي علاج الافكار والمشاعر ❌️ 
+                          
+                                </p>
+                    
+                        <p  dir='rtl' lang='ar' class="card-text">
+                    
+                    
+                       <strong>🔰 الشهر :       600 جنيه </strong>   
+                    
+                          <br>
+                        <strong>🔰 3 شهور :    1500 جنيه</strong>  
+                                 
+                            </p>
+
+                  <a  dir='rtl' lang='ar' href="#contacts" class="btn-link has-before">تواصل للاشتراك</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 dir='rtl' lang='ar' class="h3">
+                    <a dir='rtl' lang='ar' href="#contacts" class="card-title">🥇 الباقة الذهبية 🥇
+                    </a>
+                  </h3>
+
+
+                  <p  dir='rtl' lang='ar' class="card-text">
+    
+                    - نظام غذائي من اكلك المفضل  (اسبوعي)✅️
+                  
+                  </p>
+                    
+                      <p  dir='rtl' lang='ar' class="card-text">
+                      
+                        - نظام تمرين مشروح بالفيديو ✅️
+                      </p>
+                    
+                    <p  dir='rtl' lang='ar' class="card-text">
+                    
+                      - متابعه (يوميه) ✅️
+                    
+                                </p>
+                    
+                      <p  dir='rtl' lang='ar' class="card-text">
+                    
+                        - متابعه النتايج بشكل (اسبوعي) ✅️
+                          
+                                </p>
+                    
+                      <p  dir='rtl' lang='ar' class="card-text">
+                    
+                        -دعم نفسي علاج الافكار والمشاعر ✅️
+                          
+                                </p>
+                    
+                        <p  dir='rtl' lang='ar' class="card-text">
+                    
+                    
+                       <strong>🔰 الشهر :   1000  جنيه </strong>   
+                    
+                          <br>
+                        <strong>🔰 3 شهور :    2500 جنيه</strong>  
+                                 
+                            </p>
+                  <a  dir='rtl' lang='ar' href="#contacts" class="btn-link has-before">تواصل للاشتراك</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <section class="section blog bg-dark has-bg-image" id="contacts" aria-label="class"
+      style="background-image: url('./assets/images/classes-bg.png')">
+      <div class="container">
+
+        <p class="section-subtitle">تواصل للاشتراك</p>
+
+        <h2 style="color: whitesmoke;" class="h2 section-title text-center">اختر طريقة التواصل</h2>
+
+
+            <div class="class-card row justify-content-center align-items-center">
+
+ 
+
+              <div class="card-content ">
+
+                <div class="title-wrapper">
+                  <!-- <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                    class="title-icon"> -->
+
+                  <!-- <h3 class="h3">
+                    <a href="#" class="card-title">Weight Lifting</a>
+                  </h3> -->
+<br>
+                  
+
+                    <div class="col-2">
+                    <a href="https://wa.me/message/VEN3AR6H3IUBP1" class="footer-link"><i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+
+                  <div class="col-2">
+                    <a href="https://www.facebook.com/profile.php?id=100084241880219&mibextid=ZbWKwL" class="footer-link"><i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+
+                  <div class="col-2">
+                    <a href="tel:+201090285697" class="footer-link"><i class="fa-solid fa-phone"></i></a>
+                  </div>
+
+                  <div class="col-2">
+                    <a href="https://instagram.com/mahmoud_khaled6770?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+
+                  <div class="col-2">
+                    <a href="https://www.tiktok.com/@mahmoudkhaled19999?_t=8ewov1jH12U&_r=1" class="footer-link"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+
+                  <div class="col-2">
+                    <a href="https://twitter.com/mahmoud22926171?t=uM1ZzxRdz4SLkns7krA2xg&s=09" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+
+                  </div>
+                  
+                </div>
+
+
+
+              </div>
+
+      
+     
+
+
+ 
+
+      </div>
+    </section>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
